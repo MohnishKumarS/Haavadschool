@@ -1,0 +1,41 @@
+RewriteEngine on
+RewriteRule ^index$ ./index.php
+RewriteRule ^aboutus$ ./aboutus.php
+RewriteRule ^assessment$ ./assessment.php
+RewriteRule ^curriculum$ ./curriculum.php
+RewriteRule ^calender$ ./calender.php
+RewriteRule ^healthcare$ ./healthcare.php
+RewriteRule ^procedure$ ./procedure.php
+RewriteRule ^rules$ ./rules.php
+RewriteRule ^withdrawals$ ./withdrawals.php
+RewriteRule ^transport$ ./transport.php
+RewriteRule ^activities$ ./activities.php
+RewriteRule ^facilities$ ./facilities.php
+RewriteRule ^gallery$ ./gallery.php
+RewriteRule ^video-gallery$ ./video-gallery.php
+RewriteRule ^gallery-images$ ./gallery-images.php
+RewriteRule ^events$ ./events.php
+RewriteRule ^prayer$ ./prayer.php
+RewriteRule ^career$ ./career.php
+RewriteRule ^contact$ ./contact.php
+RewriteRule ^management$ ./management.php
+RewriteRule ^motto$ ./motto.php
+RewriteRule ^smc$ ./smc.php
+RewriteRule ^affidavit$ ./Affidavit.pdf
+RewriteRule ^studentenroll$ ./studentenroll.php
+RewriteRule ^faculty$ ./faculty.php
+RewriteRule ^tc$ ./tc.pdf
+RewriteRule ^staffenrich$ ./staffenrich.php
+RewriteRule ^documents$ ./documents.php
+RewriteRule ^feestructure$ ./feestructure.php
+RewriteRule ^infrastructure$ ./infrastructure.php
+RewriteRule ^circular$ ./circular.php
+RewriteRule ^annualreport$ ./annualreport.php
+RewriteRule ^homeworkpolicy$ ./homeworkpolicy.php
+
+Redirect "/about.php" "/aboutus"
+Redirect "/about" "/aboutus"
+RewriteCond %{HTTP_HOST} ^harvardcbse\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.harvardcbse\.com$
+RewriteRule ^(.*)$ "https\:\/\/haavadcbse\.com\/$1" [R=301,L]
+
